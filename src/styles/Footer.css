@@ -1,0 +1,33 @@
+.footer{
+    position: fixed;
+    top: 500px;
+    right: 1%;
+    display: flex; 
+    flex-direction: column; 
+    gap: 15px; 
+    z-index: 1000;
+    padding: 20px;
+}
+
+.footer .social-icon { 
+    padding: 3px 6px; 
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.5);
+    border: rgba(255,255,255,0.7);
+    padding: 10px;
+    transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out; /* Added smooth transition */
+}
+
+.footer .social-icon a { 
+    font-size: 1.8rem; 
+    color: #333; 
+}
+
+.footer .social-icon a:hover { 
+    transform: scale(1.2); 
+}
+
+.footer .social-icon:hover { 
+    background-color: #56a4ce; 
+    transform: scale(1.15);
+}
