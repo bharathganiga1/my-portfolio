@@ -1,33 +1,46 @@
 .footer{
     position: fixed;
-    top: 500px;
-    right: 1%;
-    display: flex; 
-    flex-direction: column; 
-    gap: 15px; 
-    z-index: 1000;
-    padding: 20px;
+    top: calc(50% - 100px);
+    right: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer .social-icon { 
-    padding: 3px 6px; 
-    border-radius: 50%;
-    background-color: rgba(255,255,255,0.5);
-    border: rgba(255,255,255,0.7);
-    padding: 10px;
-    transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out; /* Added smooth transition */
+    list-style: none;
+    transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
 }
+@supports(-webkit-backdrop-filter: none) or (backdrop-filter: none){
+    .footer li a {
+        text-decoration: none;
+        width: 50px;
+        height: 50px;
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.05);
+        backdrop-filter: blur(1rem);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        margin: 5px 0;
+        transition: 0.5s ease;
+    }
 
-.footer .social-icon a { 
-    font-size: 1.8rem; 
-    color: #333; 
-}
+};
 
 .footer .social-icon a:hover { 
     transform: scale(1.2); 
+    background: #56a4ce;
 }
-
 .footer .social-icon:hover { 
-    background-color: #56a4ce; 
+     
     transform: scale(1.15);
 }
+
+
+
