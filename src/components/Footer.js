@@ -5,7 +5,13 @@ import { FaLinkedin, FaGithub, FaInstagram, FaEnvelope } from 'react-icons/fa';
 
 function Footer() {
 
-    useEffect(() => { const handleScroll = () => { const footer = document.querySelector('.footer'); footer.style.top = `${window.innerHeight / 2 + window.scrollY-190}px`; }; window.addEventListener('scroll', handleScroll); handleScroll(); return () => { window.removeEventListener('scroll', handleScroll); }; }, []);
+    useEffect(() => { const handleScroll = () => { 
+                          const footer = document.querySelector('.footer'); 
+                          footer.style.top = `${window.innerHeight / 2 + window.scrollY-190}px`; }; 
+                          window.addEventListener('scroll', handleScroll); handleScroll(); 
+                          return () => { 
+                              window.removeEventListener('scroll', handleScroll); 
+                            }; }, []);
 
     return (
         <ul class="footer">

@@ -1,7 +1,8 @@
 
 import './styles/App.css';
-import Header from './components/Header';
 import Footer from './components/Footer';
+import Header from './components/Header';
+import Home from './components/Home';
 
 function App() {
   return (
@@ -9,8 +10,7 @@ function App() {
       <Header />
       <main>
       <section id="home">
-          <h2>Home</h2>
-          <p>Welcome to the Home section!</p>
+          <Home/>
         </section>
         <section id="about">
           <h2>About</h2>
