@@ -3,18 +3,18 @@ import './styles/App.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Home from './components/Home';
+import Education from './components/Education';
 
 function App() {
   return (
     <div>
       <Header />
       <main>
-      <section id="home">
+        <section id="home">
           <Home/>
         </section>
-        <section id="about">
-          <h2>About</h2>
-          <p>This section contains information about me.</p>
+        <section id="education">
+          <Education/>
         </section>
         <section id="projects">
           <h2>Projects</h2>

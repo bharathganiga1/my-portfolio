@@ -1,4 +1,38 @@
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.home-left, .home-right {
+    opacity: 0; 
+    transform: translateX(100px); 
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.home-left.visible {
+    animation: slideInFromLeft 0.6s ease-out forwards;
+}
+
+.home-right.visible {
+    animation: slideInFromRight 0.6s ease-out forwards;
+}
 .home-container {
     display: flex;
     align-items: center;
