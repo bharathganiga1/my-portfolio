@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import Home from './components/Home';
 import Education from './components/Education';
+import ProjectSection from './components/ProjectSection';
 
 function App() {
   return (
@@ -17,8 +18,8 @@ function App() {
           <Education/>
         </section>
         <section id="projects">
-          <h2>Projects</h2>
-          <p>Here are some of my projects.</p>
+          
+          <ProjectSection/>
         </section>
         <section id="contact">
           <h2>Contact</h2>

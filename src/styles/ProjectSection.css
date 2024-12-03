@@ -1,0 +1,117 @@
+.Projects {
+  width: 100%;
+  padding: 20px;
+}
+
+.Projects h2 {
+  text-align: center;
+  color: black;
+  margin-bottom: 20px;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+
+.project-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: auto; 
+  gap: 10px;
+}
+
+.nav-button {
+  flex: 0 0 10%; 
+  height: 50px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #0056b3;
+}
+
+.nav-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.project-container {
+  flex: 0 0 80%; 
+  display: flex;
+  justify-content: space-between;
+  gap: 2%;
+}
+
+
+.project-box {
+  flex: 1;
+  height: 250px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #333;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  
+}
+
+
+.project-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+.tech-stack {
+  margin-top: 10px;
+}
+
+.tech-stack h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.tech-stack ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tech-stack ul li {
+  font-size: 14px;
+  color: #555;
+}
+@media (max-width: 768px) {
+  .project-section {
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px;
+  }
+
+  .nav-button {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center; 
+  }
+
+  .project-container {
+    flex-direction: column; 
+    width: 100%; 
+    align-items: center; 
+    gap: 20px; 
+  }
+
+  .project-box {
+    width: 90%; 
+    max-width: 400px;
+  }
+}
+
